@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio showcasing web development skills with an anime-inspired design.">
+  <meta name="keywords" content="portfolio, web developer, anime, coding, skills">
+  <meta name="author" content="Your Name">
+  <title>Your Anime-Themed Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root">
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo">Sourav</div>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content container">
+          <img src="main.jpg" alt="Your Profile" class="hero-image">
+          <h1 class="hero-title">Hi, I'm Sourav</h1>
+          <p class="hero-subtitle">
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+            <a href="#skills" class="btn btn-secondary">View Skills</a>
+          </div>
+          <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section fade-in">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-text">
+           I'm Sourav, a passionate CSE student who thrives on building expressive and functional tech. From command-line tools to anime-themed AI apps, I love turning imagination into working code.
+          I started with C and Linux internals, then expanded into Python automation and LLM‑based offline assistants.Inspired by anime stories, I design systems with purpose and emotion.
+          <p class="section-text">
+            When I'm not coding, you can find me exploring new anime series, tinkering with Linux, or contributing to open-source projects. My goal is to craft web experiences that resonate with users and reflect my unique style.
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/souravvoid" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section fade-in">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3 class="skill-title">Languages</h3>
+              <ul class="skill-list">
+                <li><i class="devicon-python-plain"></i> Python</li>
+                <li><i class="devicon-html5-plain"></i> HTML5</li>
+                <li><i class="devicon-css3-plain"></i> CSS3</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3 class="skill-title">Frameworks</h3>
+              <ul class="skill-list">
+                <li><i class="devicon-flask-original"></i> flask</li>
+                <li><i class="devicon-kivy-plain"></i> Kivy</li>
+                
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3 class="skill-title">Tools</h3>
+              <ul class="skill-list">
+                <li><i class="devicon-git-plain"></i> Git</li>
+                <li><i class="devicon-linux-plain"></i> Linux</li>
+                <li><i class="devicon-docker-plain"></i> Docker</li>
+                <li><i class="devicon-vscode-plain"></i> VS Code</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3 class="skill-title">Other</h3>
+              <ul class="skill-list">
+                <li><i class="fas fa-terminal"></i> CLI</li>
+               
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section fade-in">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <article class="education-item">
+            <h3 class="education-title">B.tech Computer Science</h3>
+            <p class="education-details">Graphic Era hill University | 2024 - 2028</p>
+            <p class="section-text">Focused on software development, web technologies, and data structures. Graduated with honors, contributing to multiple open-source projects.</p>
+          </article>
+          <article class="education-item">
+            <h3 class="education-title">Radiant public school </h3>
+            <p class="education-details"> Year 2020 - 2024</p>
+            <p class="section-text">Subjects: PCM + Computer Science.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section fade-in">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <p>Email: <a href="mailto:your.email@example.com">semwalsourav055@gmail.com</a></p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=mailto:your.email@example.com" alt="Email QR Code" class="qr-code">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 YourName. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        const popup = document.createElement("div");
+        popup.innerHTML = "Generated by <strong>GenZai.in</strong>";
+        Object.assign(popup.style, {
+          position: "fixed",
+          bottom: "20px",
+          left: "20px",
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          color: "#fff",
+          padding: "8px 12px",
+          borderRadius: "8px",
+          fontSize: "14px",
+          zIndex: "1000",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          opacity: "0",
+          transform: "translateY(10px)",
+          transition: "opacity 0.5s ease, transform 0.5s ease"
+        });
+
+        document.body.appendChild(popup);
+
+        requestAnimationFrame(() => {
+          popup.style.opacity = "1";
+          popup.style.transform = "translateY(0)";
+        });
+
+        setTimeout(() => {
+          popup.style.opacity = "0";
+          popup.style.transform = "translateY(10px)";
+          setTimeout(() => popup.remove(), 500);
+        }, 5000);
+      })();
+    </script>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particle-canvas", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#b74b4b" },
+        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+        opacity: { value: 0.5, random: true, anim: { enable: false } },
+        size: { value: 3, random: true, anim: { enable: false } },
+        line_linked: { enable: true, distance: 150, color: "#b74b4b", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+
+    const roles = ["Web Developer", "Tech Storyteller", "Anime Enthusiast", "Code Ninja"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingText = document.querySelector(".typing-text");
+    const cursor = document.querySelector(".cursor");
+
+    function type() {
+      const currentRole = roles[roleIndex];
+      if (isDeleting) {
+        typingText.textContent = currentRole.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+          setTimeout(type, 500);
+        } else {
+          setTimeout(type, 50);
+        }
+      } else {
+        typingText.textContent = currentRole.substring(0, charIndex++);
+        if (charIndex > currentRole.length) {
+          isDeleting = true;
+          setTimeout(type, 1500);
+        } else {
+          setTimeout(type, 100);
+        }
+      }
+      cursor.style.animation = "blink 1s step-end infinite";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      type();
+      const hamburger = document.querySelector(".hamburger");
+      const navList = document.querySelector(".nav-list");
+      hamburger.addEventListener("click", () => {
+        navList.classList.toggle("active");
+        hamburger.classList.toggle("open");
+      });
+
+      const sections = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      sections.forEach((section) => observer.observe(section));
+    });
+  </script>
+</body>
+</html>
