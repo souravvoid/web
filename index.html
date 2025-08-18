@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio showcasing web development skills with an anime-inspired design.">
+  <meta name="description"
+    content="Personal portfolio showcasing web development skills with an anime-inspired design.">
   <meta name="keywords" content="portfolio, web developer, anime, coding, skills">
-  <meta name="author" content="Your Name">
-  <title>Your Anime-Themed Portfolio</title>
+  <meta name="author" content="Sourav">
+  <title>Sourav's Anime-Themed Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div id="root">
     <header class="header">
       <nav class="nav container">
         <div class="logo">Sourav</div>
-        <button class="hamburger" aria-label="Toggle menu">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-list">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#Projects" class="nav-link">Projects</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -32,6 +35,7 @@
     </header>
 
     <main>
+      <!-- Hero -->
       <section id="home" class="hero-section">
         <canvas id="particle-canvas"></canvas>
         <div class="hero-content container">
@@ -51,42 +55,46 @@
         </div>
       </section>
 
+      <!-- About -->
       <section id="about" class="section fade-in">
         <div class="container">
           <h2 class="section-title">About Me</h2>
           <p class="section-text">
-           I'm Sourav, a passionate CSE student who thrives on building expressive and functional tech. From command-line tools to anime-themed AI apps, I love turning imagination into working code.
-          I started with C and Linux internals, then expanded into Python automation and LLM‑based offline assistants.Inspired by anime stories, I design systems with purpose and emotion.
+            I'm Sourav, a passionate CSE student who thrives on building expressive and functional tech.
+            From command-line tools to anime-themed AI apps, I love turning imagination into working code.
+            I started with C and Linux internals, then expanded into Python automation and LLM-based offline assistants.
+            Inspired by anime stories, I design systems with purpose and emotion.
+          </p>
           <p class="section-text">
-            When I'm not coding, you can find me exploring new anime series, tinkering with Linux, or contributing to open-source projects. My goal is to craft web experiences that resonate with users and reflect my unique style.
+            When I'm not coding, you can find me exploring new anime series, tinkering with Linux,
+            or contributing to open-source projects. My goal is to craft web experiences that resonate
+            with users and reflect my unique style.
           </p>
 
-        <!-- YouTube video embed -->
-        <section style="max-width: 800px; margin: auto;">
-          <div style="
-                position: relative; 
-                padding-bottom: 56.25%; 
-                height: 0; 
-                overflow: hidden; 
-                border-radius: 12px; 
-                box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            " onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 6px 25px rgba(0,0,0,0.3)';"
-            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.2)';">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen
-              style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;">
-            </iframe>
-          </div>
-        </section>
+          <!-- YouTube video embed -->
+          <section style="max-width: 800px; margin: auto;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; 
+                        box-shadow: 0 4px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+              onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 6px 25px rgba(0,0,0,0.3)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.2)';">
+              <!-- Replace VIDEO_ID with actual YouTube video id -->
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen
+                style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;">
+              </iframe>
+            </div>
+          </section>
 
           <div class="social-icons">
-            <a href="https://github.com/souravvoid" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sourav-873471302/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/souravvoid" target="_blank" class="social-icon"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sourav-873471302/" target="_blank" class="social-icon"><i
+                class="fab fa-linkedin"></i></a>
             <a href="https://x.com/sourav_void" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </section>
 
+      <!-- Skills -->
       <section id="skills" class="section fade-in">
         <div class="container">
           <h2 class="section-title">Skills</h2>
@@ -102,9 +110,8 @@
             <article class="skill-card">
               <h3 class="skill-title">Frameworks</h3>
               <ul class="skill-list">
-                <li><i class="devicon-flask-original"></i> flask</li>
+                <li><i class="devicon-flask-original"></i> Flask</li>
                 <li><i class="devicon-kivy-original"></i> Kivy</li>
-                
               </ul>
             </article>
             <article class="skill-card">
@@ -117,61 +124,60 @@
               </ul>
             </article>
             <article class="skill-card">
-              <h3 class="skill-title">Strength</h3>
+              <h3 class="skill-title">Strengths</h3>
               <ul class="skill-list">
-                  <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
-                  <li><i class="fas fa-bolt"></i> Quick Learner</li>
-                  <li><i class="fas fa-users"></i> Team Collaboration</li>
-                  <li><i class="fas fa-sync-alt"></i> Adaptability</li>
-                  <li><i class="fas fa-eye"></i> Attention to Detail</li>       
+                <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+                <li><i class="fas fa-bolt"></i> Quick Learner</li>
+                <li><i class="fas fa-users"></i> Team Collaboration</li>
+                <li><i class="fas fa-sync-alt"></i> Adaptability</li>
+                <li><i class="fas fa-eye"></i> Attention to Detail</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
-<!-- Projects Section -->
-<section id="Projects"
-  style="max-width: 900px; margin: auto; padding: 20px; box-sizing: border-box; font-family: Arial, sans-serif;">
-  <h3 class="section-title" style="color: #ff4d4d; margin-bottom: 15px;">Projects</h3>
-  <ul class="project-list" style="list-style: none; padding-left: 0; margin: 0;">
-    <li
-      style="background: #222; color: #eee; border-radius: 8px; padding: 15px 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-      <i class="fas fa-lock" style="font-size: 1.3rem; color: #ff4d4d; flex-shrink: 0;"></i>
-      <strong style="margin-right: 8px; font-weight: 600; flex-shrink: 0;">PDF Encryption Tool</strong> – A Python
-      project to encrypt PDFs.
-      <a href="https://github.com/souravvoid/PDF-Auto-Encryption" target="_blank"
-        style="margin-left: auto; color: #ff4d4d; text-decoration: none; font-weight: 500;">View on GitHub</a>
-    </li>
-    <li
-      style="background: #222; color: #eee; border-radius: 8px; padding: 15px 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-      <i class="fas fa-code" style="font-size: 1.3rem; color: #ff4d4d; flex-shrink: 0;"></i>
-      <strong style="margin-right: 8px; font-weight: 600; flex-shrink: 0;">Command line </strong> – make using 
-      c 
-      <a href="https://github.com/souravvoid/shell-command-line" target="_blank"
-        style="margin-left: auto; color: #ff4d4d; text-decoration: none; font-weight: 500;">View on GitHub</a>
-    </li>
-  </ul>
-</section>
 
+      <!-- Projects -->
+      <section id="projects" class="section fade-in"
+        style="max-width: 900px; margin: auto; padding: 20px; box-sizing: border-box;">
+        <h3 class="section-title" style="color: #ff4d4d; margin-bottom: 15px;">Projects</h3>
+        <ul class="project-list" style="list-style: none; padding-left: 0; margin: 0;">
+          <li
+            style="background: #222; color: #eee; border-radius: 8px; padding: 15px 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <i class="fas fa-lock" style="font-size: 1.3rem; color: #ff4d4d;"></i>
+            <strong style="margin-right: 8px; font-weight: 600;">PDF Encryption Tool</strong> – A Python project to
+            encrypt PDFs.
+            <a href="https://github.com/souravvoid/PDF-Auto-Encryption" target="_blank"
+              style="margin-left: auto; color: #ff4d4d; text-decoration: none; font-weight: 500;">View on GitHub</a>
+          </li>
+          <li
+            style="background: #222; color: #eee; border-radius: 8px; padding: 15px 20px; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <i class="fas fa-code" style="font-size: 1.3rem; color: #ff4d4d;"></i>
+            <strong style="margin-right: 8px; font-weight: 600;">Command Line</strong> – Built using C.
+            <a href="https://github.com/souravvoid/shell-command-line" target="_blank"
+              style="margin-left: auto; color: #ff4d4d; text-decoration: none; font-weight: 500;">View on GitHub</a>
+          </li>
+        </ul>
+      </section>
 
-  
-
+      <!-- Education -->
       <section id="education" class="section fade-in">
         <div class="container">
           <h2 class="section-title">Education</h2>
           <article class="education-item">
-            <h3 class="education-title">B.tech Computer Science | U.G</h3>
-            <p class="education-details">Graphic Era hill University | 2024 - 2028 | (2nd year)</p>
+            <h3 class="education-title">B.Tech Computer Science | U.G</h3>
+            <p class="education-details">Era Hill University | 2023 - Present</p>
             <p class="section-text">Focused on software development, web technologies.</p>
           </article>
           <article class="education-item">
-            <h3 class="education-title">High School </h3>
-            <p class="education-details"> Radiant Public School |Year 2020 - 2024</p>
+            <h3 class="education-title">High School</h3>
+            <p class="education-details">Public School | 2020 - 2022</p>
             <p class="section-text">Subjects: PCM + Computer Science.</p>
           </article>
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact" class="section fade-in">
         <div class="container">
           <h2 class="section-title">Contact Me</h2>
@@ -191,21 +197,24 @@
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
           <div class="contact-info">
-            <p>Email: <a href="mailto:your.email@example.com">semwalsourav055@gmail.com</a></p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=mailto:semwalsourav055@gmail.com" alt="Email QR Code" class="qr-code">
+            <p>Email: <a href="mailto:sourav@gmail.com">sourav@gmail.com</a></p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=mailto:sourav@gmail.com"
+              alt="Email QR Code" class="qr-code">
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 </p>
+        <p>&copy; 2025 Sourav</p>
       </div>
     </footer>
 
+    <!-- Popup -->
     <script>
-      (function() {
+      (function () {
         const popup = document.createElement("div");
         popup.innerHTML = "Made by <strong>Sourav</strong>";
         Object.assign(popup.style, {
@@ -240,22 +249,22 @@
     </script>
   </div>
 
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particle-canvas", {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
         color: { value: "#b74b4b" },
-        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
-        opacity: { value: 0.5, random: true, anim: { enable: false } },
-        size: { value: 3, random: true, anim: { enable: false } },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
         line_linked: { enable: true, distance: 150, color: "#b74b4b", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+        move: { enable: true, speed: 2 }
       },
       interactivity: {
-        detect_on: "canvas",
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
-        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
       },
       retina_detect: true
     });
@@ -295,23 +304,21 @@
       const hamburger = document.querySelector(".hamburger");
       const navList = document.querySelector(".nav-list");
       hamburger.addEventListener("click", () => {
+        const expanded = hamburger.getAttribute("aria-expanded") === "true";
+        hamburger.setAttribute("aria-expanded", !expanded);
         navList.classList.toggle("active");
         hamburger.classList.toggle("open");
       });
 
       const sections = document.querySelectorAll(".fade-in");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, { threshold: 0.1 });
       sections.forEach((section) => observer.observe(section));
     });
   </script>
 </body>
+
 </html>
